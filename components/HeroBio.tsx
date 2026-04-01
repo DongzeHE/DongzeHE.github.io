@@ -8,14 +8,12 @@ const interests = [
 
 export function HeroBio() {
   return (
-    <section className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 mb-8">
-      <p className="font-mono text-xs text-zinc-600 mb-4">
+    <section className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-5 mb-6">
+      <p className="font-mono text-xs text-zinc-600 mb-3">
         $ cat ~/about.md
       </p>
 
-      <h2 className="text-xl font-bold text-zinc-50">
-        Hi, I&apos;m Dongze
-      </h2>
+      <h2 className="text-lg font-bold text-zinc-50">About</h2>
 
       <p className="text-sm text-zinc-400 leading-relaxed mt-3">
         I&apos;m a Computational Scientist at{" "}
@@ -38,11 +36,11 @@ export function HeroBio() {
         single-cell analysis used by researchers worldwide.
       </p>
 
-      <div className="flex flex-wrap gap-2 mt-4">
+      <div className="flex flex-wrap gap-1.5 mt-3">
         {interests.map((tag) => (
           <span
             key={tag}
-            className="text-xs px-2.5 py-1 rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700/50"
+            className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700/50"
           >
             {tag}
           </span>

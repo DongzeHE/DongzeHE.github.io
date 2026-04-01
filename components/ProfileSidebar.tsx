@@ -83,12 +83,6 @@ export function ProfileSidebar() {
           ))}
         </div>
 
-        <p className="text-sm text-zinc-400 leading-relaxed mt-5">
-          Computational biologist developing tools and methods for single-cell,
-          spatial, and multi-omics data analysis. Building scalable
-          bioinformatics infrastructure at Altos Labs.
-        </p>
-
         {/* Social icons */}
         <div className="flex items-center justify-center gap-3 mt-5">
           {socials.map(({ href, label, icon: Icon }) => (

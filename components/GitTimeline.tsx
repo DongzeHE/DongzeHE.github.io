@@ -44,6 +44,9 @@ export function GitTimeline() {
 
   return (
     <section ref={containerRef} className="relative min-h-screen">
+      <p className="font-mono text-xs text-zinc-600 mb-4">
+        $ git log --oneline --graph --all
+      </p>
       <TimelineFilter
         activeFilter={activeFilter}
         onFilterChange={setActiveFilter}
