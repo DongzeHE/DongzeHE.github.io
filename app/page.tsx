@@ -7,12 +7,19 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <div className="grid grid-cols-1 md:grid-cols-12 max-w-7xl mx-auto">
-        <div className="md:col-span-4">
+        {/* Left: Profile Sidebar */}
+        <div className="md:col-span-3">
           <ProfileSidebar />
         </div>
-        <div className="md:col-span-8 px-6 md:px-12 py-12">
+
+        {/* Middle: Hero Bio + Git Timeline */}
+        <div className="md:col-span-6 px-6 md:px-8 py-12">
           <HeroBio />
           <GitTimeline />
+        </div>
+
+        {/* Right: Blog Posts */}
+        <div className="md:col-span-3 px-4 md:px-2 py-12">
           <BlogSection />
         </div>
       </div>

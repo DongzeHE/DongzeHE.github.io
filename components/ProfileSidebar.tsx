@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail, GraduationCap, ExternalLink } from "lucide-react";
 
 function GitHubIcon({ size = 18 }: { size?: number }) {
@@ -44,40 +45,52 @@ const socials = [
   },
 ];
 
+const tags = [
+  "Computational Scientist @ Altos Labs",
+  "PhD in Computational Biology from UMD",
+  "Surfer located in San Diego, CA",
+];
+
 export function ProfileSidebar() {
   return (
-    <aside className="md:sticky md:top-0 md:h-screen flex flex-col justify-center p-8 md:p-12">
-      <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8 backdrop-blur-sm">
-        {/* Profile image placeholder */}
+    <aside className="md:sticky md:top-0 md:h-screen flex flex-col justify-center p-6 md:p-8">
+      <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm">
+        {/* Profile headshot */}
         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 p-[2px] mx-auto">
-          <div className="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center">
-            <span className="text-4xl font-bold text-zinc-400">DH</span>
-          </div>
+          <Image
+            src="/headshot.jpeg"
+            alt="Dongze He"
+            width={128}
+            height={128}
+            className="w-full h-full rounded-full object-cover"
+            priority
+          />
         </div>
 
         <h1 className="text-2xl font-bold text-zinc-50 mt-6 text-center">
           Dongze He
         </h1>
-        <p className="font-mono text-sm text-zinc-400 text-center mt-1">
-          Computational Scientist
-        </p>
-        <p className="text-sm text-zinc-500 text-center">
-          Altos Labs, San Diego
-        </p>
 
-        <p className="text-sm text-zinc-400 leading-relaxed mt-6">
-          Computational biologist developing tools and methods for single-cell
-          genomics and multi-omics data analysis. Building scalable
+        {/* Tags */}
+        <div className="flex flex-col gap-2 mt-4">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="text-xs px-3 py-1.5 rounded-lg bg-zinc-800/80 text-zinc-400 border border-zinc-700/50 text-center"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <p className="text-sm text-zinc-400 leading-relaxed mt-5">
+          Computational biologist developing tools and methods for single-cell,
+          spatial, and multi-omics data analysis. Building scalable
           bioinformatics infrastructure at Altos Labs.
         </p>
 
-        <p className="text-sm text-zinc-500 leading-relaxed mt-3">
-          Ph.D. in Computational Biology from the University of Maryland.
-          Core contributor to nf-core. Creator of alevin-fry and simpleaf.
-        </p>
-
         {/* Social icons */}
-        <div className="flex items-center justify-center gap-3 mt-6">
+        <div className="flex items-center justify-center gap-3 mt-5">
           {socials.map(({ href, label, icon: Icon }) => (
             <a
               key={label}
