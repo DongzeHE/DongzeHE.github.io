@@ -1,5 +1,7 @@
 import { ProfileSidebar } from "@/components/ProfileSidebar";
+import { HeroBio } from "@/components/HeroBio";
 import { GitTimeline } from "@/components/GitTimeline";
+import { BlogSection } from "@/components/BlogSection";
 
 export default function Home() {
   return (
@@ -9,7 +11,9 @@ export default function Home() {
           <ProfileSidebar />
         </div>
         <div className="md:col-span-8 px-6 md:px-12 py-12">
+          <HeroBio />
           <GitTimeline />
+          <BlogSection />
         </div>
       </div>
     </main>

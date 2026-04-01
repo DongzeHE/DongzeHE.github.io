@@ -101,6 +101,11 @@ export const timelineData: TimelineEntry[] = [
       "Lead developer of the official nf-core pipeline for spatial transcriptomics analysis, supporting multiple technologies and data formats. Standardized workflows for cell segmentation, transcript assignment, and spatial feature extraction.",
     links: [
       {
+        label: "nf-core",
+        url: "https://nf-co.re/spatialxe/dev/",
+        icon: "external",
+      },
+      {
         label: "GitHub",
         url: "https://github.com/nf-core/spatialxe",
         icon: "github",
@@ -119,7 +124,7 @@ export const timelineData: TimelineEntry[] = [
     links: [
       {
         label: "GitHub",
-        url: "https://github.com/nf-core/msproteomics",
+        url: "https://github.com/nf-core/msproteomics/tree/dev",
         icon: "github",
       },
     ],
@@ -173,6 +178,28 @@ export const timelineData: TimelineEntry[] = [
       },
     ],
     techStack: ["Rust", "CLI"],
+  },
+  {
+    id: "g3a8f1b",
+    date: "2023",
+    sortDate: "2023-03-01",
+    type: TimelineType.Research,
+    title: "scrnaseq — nf-core single-cell RNA-seq pipeline",
+    description:
+      "Core contributor to the official nf-core pipeline for single-cell RNA-seq preprocessing. Integrated the alevin-fry/simpleaf workflow as a primary analysis path alongside STARSolo, Kallisto/BUStools, and Cell Ranger.",
+    links: [
+      {
+        label: "nf-core",
+        url: "https://nf-co.re/scrnaseq/4.1.0/",
+        icon: "external",
+      },
+      {
+        label: "GitHub",
+        url: "https://github.com/nf-core/scrnaseq",
+        icon: "github",
+      },
+    ],
+    techStack: ["Nextflow", "Rust", "nf-core"],
   },
   {
     id: "a1c8e2f",
