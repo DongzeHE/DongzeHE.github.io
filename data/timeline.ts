@@ -28,15 +28,43 @@ export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
   {
-    id: "e7a1b3c",
-    date: "Jun 2024",
-    sortDate: "2024-06-01",
-    type: TimelineType.Milestone,
-    title: "Joined Altos Labs as Computational Scientist",
+    id: "f1e4b7d",
+    date: "Mar 2026",
+    sortDate: "2026-03-30",
+    type: TimelineType.Research,
+    title: "msproteomics — nf-core proteomics pipeline",
     description:
-      "Architecting fully automated multi-omics platforms (Flyte + Nextflow + AWS) and deploying ReAct-based AI dashboards to accelerate scientific hypothesis generation.",
-    links: [],
-    techStack: ["Nextflow", "Flyte", "AWS", "RShiny", "LangChain"],
+      "Creator of the official nf-core end-to-end pipeline for quantitative mass spectrometry-based proteomics. Automated protein identification, quantification, differential abundance analysis, and pathway enrichment.",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/nf-core/msproteomics/tree/dev",
+        icon: "github",
+      },
+    ],
+    techStack: ["Nextflow", "R", "nf-core"],
+  },
+  {
+    id: "c2d5a9e",
+    date: "Mar 2026",
+    sortDate: "2026-03-01",
+    type: TimelineType.Research,
+    title: "spatialxe — nf-core spatial transcriptomics pipeline",
+    description:
+      "Lead developer of the official nf-core pipeline for spatial transcriptomics analysis, supporting multiple technologies and data formats. Standardized workflows for cell segmentation, transcript assignment, and spatial feature extraction.",
+    links: [
+      {
+        label: "nf-core",
+        url: "https://nf-co.re/spatialxe/dev/",
+        icon: "external",
+      },
+      {
+        label: "GitHub",
+        url: "https://github.com/nf-core/spatialxe",
+        icon: "github",
+      },
+    ],
+    techStack: ["Nextflow", "Python", "nf-core"],
   },
   {
     id: "a3f7c2d",
@@ -58,6 +86,17 @@ export const timelineData: TimelineEntry[] = [
       },
     ],
     techStack: ["Rust", "Python", "Statistical Modeling"],
+  },
+  {
+    id: "e7a1b3c",
+    date: "Jun 2024",
+    sortDate: "2024-06-01",
+    type: TimelineType.Milestone,
+    title: "Joined Altos Labs as Computational Scientist",
+    description:
+      "Architecting fully automated multi-omics platforms (Flyte + Nextflow + AWS) and deploying ReAct-based AI dashboards to accelerate scientific hypothesis generation.",
+    links: [],
+    techStack: ["Nextflow", "Flyte", "AWS", "RShiny", "LangChain"],
   },
   {
     id: "d4f2e8a",
@@ -92,43 +131,26 @@ export const timelineData: TimelineEntry[] = [
     techStack: ["R", "Bayesian Statistics"],
   },
   {
-    id: "c2d5a9e",
-    date: "2024",
-    sortDate: "2024-03-01",
+    id: "g3a8f1b",
+    date: "Mar 2025",
+    sortDate: "2025-03-11",
     type: TimelineType.Research,
-    title: "spatialxe — nf-core spatial transcriptomics pipeline",
+    title: "scrnaseq — nf-core single-cell RNA-seq pipeline",
     description:
-      "Lead developer of the official nf-core pipeline for spatial transcriptomics analysis, supporting multiple technologies and data formats. Standardized workflows for cell segmentation, transcript assignment, and spatial feature extraction.",
+      "Core contributor to the official nf-core pipeline for single-cell RNA-seq preprocessing. Integrated the alevin-fry/simpleaf workflow as a primary analysis path alongside STARSolo, Kallisto/BUStools, and Cell Ranger.",
     links: [
       {
         label: "nf-core",
-        url: "https://nf-co.re/spatialxe/dev/",
+        url: "https://nf-co.re/scrnaseq/4.1.0/",
         icon: "external",
       },
       {
         label: "GitHub",
-        url: "https://github.com/nf-core/spatialxe",
+        url: "https://github.com/nf-core/scrnaseq",
         icon: "github",
       },
     ],
-    techStack: ["Nextflow", "Python", "nf-core"],
-  },
-  {
-    id: "f1e4b7d",
-    date: "2024",
-    sortDate: "2024-02-01",
-    type: TimelineType.Research,
-    title: "msproteomics — nf-core proteomics pipeline",
-    description:
-      "Creator of the official nf-core end-to-end pipeline for quantitative mass spectrometry-based proteomics. Automated protein identification, quantification, differential abundance analysis, and pathway enrichment.",
-    links: [
-      {
-        label: "GitHub",
-        url: "https://github.com/nf-core/msproteomics/tree/dev",
-        icon: "github",
-      },
-    ],
-    techStack: ["Nextflow", "R", "nf-core"],
+    techStack: ["Nextflow", "Rust", "nf-core"],
   },
   {
     id: "e9a2c4b",
@@ -178,28 +200,6 @@ export const timelineData: TimelineEntry[] = [
       },
     ],
     techStack: ["Rust", "CLI"],
-  },
-  {
-    id: "g3a8f1b",
-    date: "2023",
-    sortDate: "2023-03-01",
-    type: TimelineType.Research,
-    title: "scrnaseq — nf-core single-cell RNA-seq pipeline",
-    description:
-      "Core contributor to the official nf-core pipeline for single-cell RNA-seq preprocessing. Integrated the alevin-fry/simpleaf workflow as a primary analysis path alongside STARSolo, Kallisto/BUStools, and Cell Ranger.",
-    links: [
-      {
-        label: "nf-core",
-        url: "https://nf-co.re/scrnaseq/4.1.0/",
-        icon: "external",
-      },
-      {
-        label: "GitHub",
-        url: "https://github.com/nf-core/scrnaseq",
-        icon: "github",
-      },
-    ],
-    techStack: ["Nextflow", "Rust", "nf-core"],
   },
   {
     id: "a1c8e2f",
