@@ -17,11 +17,11 @@ body {
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
-  cursor: url('/cursors/cursor.svg') 30 17, auto;
+  cursor: none;
 }
 
-a, button {
-  cursor: url('/cursors/pointer.svg') 30 16, pointer;
+*, *::before, *::after {
+  cursor: none !important;
 }
 
 @keyframes pulse-glow {
