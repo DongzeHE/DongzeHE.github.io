@@ -10,6 +10,7 @@ export function BlogSection() {
         </p>
         <h2 className="text-lg font-bold text-zinc-50">Blog Posts</h2>
       </div>
+      <div className="border-b border-zinc-800 pb-4 mb-8" />
 
       <div className="flex flex-col gap-4">
         {blogPosts.map((post) => (
