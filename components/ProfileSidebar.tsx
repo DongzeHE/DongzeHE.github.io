@@ -53,7 +53,7 @@ const tags = [
 
 export function ProfileSidebar() {
   return (
-    <aside className="md:sticky md:top-0 md:h-screen flex flex-col justify-center p-6 md:p-8">
+    <aside className="md:sticky md:top-0 md:h-screen flex flex-col justify-start p-6 md:p-8 pt-12">
       <div className="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-6 backdrop-blur-sm">
         {/* Profile headshot */}
         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-green-500 p-[2px] mx-auto">
