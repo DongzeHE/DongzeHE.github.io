@@ -4,13 +4,12 @@ import { blogPosts } from "@/data/blog";
 export function BlogSection() {
   return (
     <section>
-      <div className="mb-4">
-        <p className="font-mono text-xs text-zinc-600 mb-2">
-          $ ls ~/blog/
-        </p>
-        <h2 className="text-lg font-bold text-zinc-50">Blog Posts</h2>
+      <p className="font-mono text-xs text-zinc-600 mb-4">
+        $ ls ~/blog/
+      </p>
+      <div className="border-b border-zinc-800 pb-4 mb-8 flex items-center">
+        <h2 className="text-lg font-bold text-zinc-50 py-1.5">Blog Posts</h2>
       </div>
-      <div className="border-b border-zinc-800 pb-4 mb-8" />
 
       <div className="flex flex-col gap-4">
         {blogPosts.map((post) => (
