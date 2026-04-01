@@ -8,7 +8,7 @@ export function BlogSection() {
         $ ls ~/blog/
       </p>
       <div className="border-b border-zinc-800 pb-4 mb-8 flex items-center">
-        <h2 className="text-lg font-bold text-zinc-50 py-1.5">Blog Posts</h2>
+        <h2 className="text-sm font-medium text-zinc-50 px-3 py-1.5">Blog Posts</h2>
       </div>
 
       <div className="flex flex-col gap-4">
