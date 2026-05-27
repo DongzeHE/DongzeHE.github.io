@@ -28,6 +28,31 @@ export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
   {
+    id: "b7a4d2c",
+    date: "Apr 2026",
+    sortDate: "2026-04-15",
+    type: TimelineType.Publication,
+    title:
+      "QCatch: a framework for quality control assessment and analysis of single-cell sequencing data",
+    description:
+      "A Python-based command-line tool that generates comprehensive, interactive quality control reports for single-cell quantification results from alevin-fry and simpleaf.",
+    venue: "Bioinformatics 42(5), btag184",
+    authors: "Yuan Gao*, Dongze He*, and Rob Patro",
+    links: [
+      {
+        label: "Paper",
+        url: "https://doi.org/10.1093/bioinformatics/btag184",
+        icon: "paper",
+      },
+      {
+        label: "GitHub",
+        url: "https://github.com/COMBINE-lab/QCatch",
+        icon: "github",
+      },
+    ],
+    techStack: ["Python", "CLI", "Single-cell QC"],
+  },
+  {
     id: "f1e4b7d",
     date: "Mar 2026",
     sortDate: "2026-03-30",
