@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dongze He | Computational Scientist",
+  title: "Dongze He | Data Scientist II",
   description:
-    "Computational biologist developing tools and methods for single-cell genomics and multi-omics data analysis. Building scalable bioinformatics infrastructure at Altos Labs.",
+    "Data Scientist II building single-cell foundation models and multi-agent LLM systems for biological discovery at Altos Labs.",
   openGraph: {
-    title: "Dongze He | Computational Scientist",
+    title: "Dongze He | Data Scientist II",
     description:
-      "Single-cell genomics, multi-omics, and scalable bioinformatics at Altos Labs.",
+      "Single-cell foundation models, proteomics agents, and computational biology at Altos Labs.",
     type: "website",
   },
 };

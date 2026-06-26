@@ -99,6 +99,18 @@ export function TimelineCommit({ entry }: TimelineCommitProps) {
           {entry.description}
         </p>
 
+        {/* Highlights */}
+        {entry.highlights && entry.highlights.length > 0 && (
+          <ul className="mt-3 space-y-1.5 text-sm text-zinc-400 leading-relaxed">
+            {entry.highlights.map((highlight) => (
+              <li key={highlight} className="flex gap-2">
+                <span className="mt-2 h-1 w-1 flex-none rounded-full bg-zinc-600" />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+
         {/* Tech stack */}
         {entry.techStack.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-3">

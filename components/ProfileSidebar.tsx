@@ -46,7 +46,7 @@ const socials = [
 ];
 
 const tags = [
-  "Computational Scientist @ Altos Labs",
+  "Data Scientist II @ Altos Labs",
   "PhD in Computational Biology from UMD",
   "Surfer located in San Diego, CA",
 ];

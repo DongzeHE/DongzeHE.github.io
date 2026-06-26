@@ -1,9 +1,9 @@
 const interests = [
-  "Single-cell Genomics",
-  "Spatial Transcriptomics",
-  "Multi-omics Integration",
+  "Agentic Workflows",
+  "Foundation Models",
   "Deep Learning",
-  "Bioinformatics Pipelines",
+  "Single-cell AI",
+  "Proteomics Agents",
 ];
 
 export function HeroBio() {
@@ -16,24 +16,28 @@ export function HeroBio() {
       <h2 className="text-lg font-bold text-zinc-50">About</h2>
 
       <p className="text-sm text-zinc-400 leading-relaxed mt-3">
-        I&apos;m a Computational Scientist at{" "}
-        <span className="text-zinc-200">Altos Labs</span>, where I architect
-        fully automated multi-omics platforms and develop causal-inference
-        frameworks for aging research. My work spans single-cell genomics,
-        spatial transcriptomics, and large-scale data integration — building
-        the computational tools that turn raw sequencing data into biological
-        insight.
+        I&apos;m a Data Scientist II at{" "}
+        <span className="text-zinc-200">Altos Labs</span>, where my current
+        work focuses on agentic scientific workflows and deep learning systems
+        for biological discovery. I develop byte-level single-cell foundation
+        models from raw read sequences and build multi-agent LLM systems that
+        autonomously reproduce mass-spec proteomics studies with structured
+        extraction, self-correction, and MLflow-traced evaluation.
       </p>
 
       <p className="text-sm text-zinc-400 leading-relaxed mt-3">
-        I created the{" "}
+        Previously at Altos, I created nf-core pipelines, architected
+        event-driven AWS and Seqera analysis automation across spatial,
+        proteomics, and single-cell datasets, and built multi-omics
+        causal-network workflows for aging and cellular reprogramming
+        research. I created the{" "}
         <span className="text-zinc-200">alevin-fry</span> ecosystem for
         single-cell RNA-seq preprocessing (published in{" "}
-        <span className="text-zinc-300 italic">Nature Methods</span>) and am
-        a core contributor to the{" "}
-        <span className="text-zinc-200">nf-core</span> community, leading
-        development of pipelines for spatial transcriptomics, proteomics, and
-        single-cell analysis used by researchers worldwide.
+        <span className="text-zinc-300 italic">Nature Methods</span>) and have
+        contributed to the{" "}
+        <span className="text-zinc-200">nf-core</span> community by developing
+        pipelines for spatial transcriptomics, proteomics, and single-cell
+        analysis used by researchers worldwide.
       </p>
 
       <div className="flex flex-wrap gap-1.5 mt-3">

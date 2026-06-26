@@ -20,6 +20,7 @@ export interface TimelineEntry {
   description: string;
   venue?: string;
   authors?: string;
+  highlights?: string[];
   links: TimelineLink[];
   techStack: string[];
 }
@@ -27,6 +28,42 @@ export interface TimelineEntry {
 export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
+  {
+    id: "a1c8e2f",
+    date: "Jun 2026",
+    sortDate: "2026-06-11",
+    type: TimelineType.Publication,
+    title:
+      "Dynamic transitioning between MAPK-driven and WNT-driven cell states drives intestinal cancer and shapes therapy response",
+    description:
+      "Nature Genetics publication from my Genentech internship project, connecting WNT- and MAPK-driven colorectal cancer cell states with tumor growth and therapy response.",
+    venue: "Nature Genetics 58, 1331-1340 (2026)",
+    authors: "Amanda R. Moore et al. (including Dongze He)",
+    links: [
+      {
+        label: "Nature Genetics",
+        url: "https://www.nature.com/articles/s41588-026-02611-0",
+        icon: "paper",
+      },
+    ],
+    techStack: ["Cancer Genomics", "Single-cell Analysis", "Genentech"],
+  },
+  {
+    id: "p9d4f6b",
+    date: "May 2026",
+    sortDate: "2026-05-01",
+    type: TimelineType.Milestone,
+    title: "Promoted to Data Scientist II at Altos Labs",
+    description:
+      "Advanced to Data Scientist II, focusing on foundation models and agentic scientific workflows for biological discovery.",
+    highlights: [
+      "Developed a reference-free, tokenization-free, byte-level single-cell foundation model trained directly on raw read sequences.",
+      "Used self-supervised pretraining with next-base language modeling, same-cell contrastive margin loss, and multi-GPU distributed training.",
+      "Built a LangGraph multi-agent LLM system that reproduces mass-spec proteomics studies with schema-constrained extraction, self-correction, MLflow tracing, and LLM-as-judge evaluation.",
+    ],
+    links: [],
+    techStack: ["LangGraph", "MLflow", "Deep Learning", "Single-cell AI"],
+  },
   {
     id: "b7a4d2c",
     date: "Apr 2026",
@@ -36,12 +73,12 @@ export const timelineData: TimelineEntry[] = [
       "QCatch: a framework for quality control assessment and analysis of single-cell sequencing data",
     description:
       "A Python-based command-line tool that generates comprehensive, interactive quality control reports for single-cell quantification results from alevin-fry and simpleaf.",
-    venue: "Bioinformatics 42(5), btag184",
+    venue: "Bioinformatics, Volume 42, Issue 5, May 2026, btag184",
     authors: "Yuan Gao*, Dongze He*, and Rob Patro",
     links: [
       {
-        label: "Paper",
-        url: "https://doi.org/10.1093/bioinformatics/btag184",
+        label: "OUP Bioinformatics",
+        url: "https://academic.oup.com/bioinformatics/article/42/5/btag184/8654715",
         icon: "paper",
       },
       {
@@ -74,18 +111,18 @@ export const timelineData: TimelineEntry[] = [
     date: "Mar 2026",
     sortDate: "2026-03-01",
     type: TimelineType.Research,
-    title: "spatialxe — nf-core spatial transcriptomics pipeline",
+    title: "spatialaxe — nf-core spatial transcriptomics pipeline",
     description:
       "Lead developer of the official nf-core pipeline for spatial transcriptomics analysis, supporting multiple technologies and data formats. Standardized workflows for cell segmentation, transcript assignment, and spatial feature extraction.",
     links: [
       {
         label: "nf-core",
-        url: "https://nf-co.re/spatialxe/dev/",
+        url: "https://nf-co.re/spatialaxe/dev/",
         icon: "external",
       },
       {
         label: "GitHub",
-        url: "https://github.com/nf-core/spatialxe",
+        url: "https://github.com/nf-core/spatialaxe",
         icon: "github",
       },
     ],
@@ -117,11 +154,16 @@ export const timelineData: TimelineEntry[] = [
     date: "Jun 2024",
     sortDate: "2024-06-01",
     type: TimelineType.Milestone,
-    title: "Joined Altos Labs as Computational Scientist",
+    title: "Joined Altos Labs as Computational Scientist I",
     description:
-      "Architecting fully automated multi-omics platforms (Flyte + Nextflow + AWS) and deploying ReAct-based AI dashboards to accelerate scientific hypothesis generation.",
+      "Built scalable bioinformatics infrastructure and multi-omics analysis systems across spatial, proteomics, and single-cell programs.",
+    highlights: [
+      "Created and maintained open-source nf-core pipelines with 30+ merged contributions across 4 pipelines and 7 reusable tool modules.",
+      "Architected AWS S3-triggered Seqera Tower pipelines that processed 300+ Xenium slices, 250+ mass-spec experiments, and 100+ single-cell samples without manual intervention.",
+      "Built multi-omics causal-network workflows using footprint-based activity inference and constraint-based optimization for aging and cellular reprogramming research.",
+    ],
     links: [],
-    techStack: ["Nextflow", "Flyte", "AWS", "RShiny", "LangChain"],
+    techStack: ["Nextflow", "Seqera", "AWS", "Multi-omics", "nf-core"],
   },
   {
     id: "d4f2e8a",
@@ -131,6 +173,11 @@ export const timelineData: TimelineEntry[] = [
     title: "Ph.D. in Biological Sciences — University of Maryland",
     description:
       "Methods for efficient processing and comprehensive analysis of single-cell sequencing data. Advisor: Dr. Rob Patro. Concentration: Computational Biology and Bioinformatics.",
+    highlights: [
+      "Led development of the Rust-based alevin-fry/simpleaf ecosystem for faster, memory-frugal single-cell preprocessing.",
+      "Co-authored the Single-Cell Best Practices open-source textbook, a community standard for single-cell analysis and benchmarking.",
+      "Designed Forseti, the first statistical model to predict scRNA-seq read splicing status, reaching AUROC 0.9.",
+    ],
     links: [],
     techStack: ["Rust", "Python", "R", "C/C++"],
   },
@@ -202,6 +249,28 @@ export const timelineData: TimelineEntry[] = [
     techStack: ["Python", "R", "Jupyter"],
   },
   {
+    id: "h6d3b9a",
+    date: "Summer 2023",
+    sortDate: "2023-06-15",
+    type: TimelineType.Research,
+    title: "Deep Learning Motif Discovery for scATAC-seq — Genentech",
+    description:
+      "Summer internship project that later connected to the Nature Genetics colorectal cancer publication.",
+    highlights: [
+      "Improved a deep-learning Motif Discovery Analysis framework for scATAC-seq, enabling the first cell-type-specific MDA at Genentech.",
+      "Discovered regulatory targets of a key transcription factor through integrated MDA and gene-regulatory-network analysis.",
+      "Implemented the analysis workflow in Nextflow for reproducible execution.",
+    ],
+    links: [
+      {
+        label: "Publication outcome",
+        url: "https://www.nature.com/articles/s41588-026-02611-0",
+        icon: "paper",
+      },
+    ],
+    techStack: ["PyTorch", "Nextflow", "Python"],
+  },
+  {
     id: "d7b1f3e",
     date: "Jan 2023",
     sortDate: "2023-01-01",
@@ -225,17 +294,6 @@ export const timelineData: TimelineEntry[] = [
       },
     ],
     techStack: ["Rust", "CLI"],
-  },
-  {
-    id: "a1c8e2f",
-    date: "Summer 2023",
-    sortDate: "2023-06-15",
-    type: TimelineType.Research,
-    title: "Deep Learning Motif Discovery for scATAC-seq — Genentech",
-    description:
-      "Improved a deep-learning-based Motif Discovery Analysis framework for scATAC-seq, enabling the first cell-type-specific MDA at Genentech. Discovered regulatory targets through integrated MDA and gene-regulatory-network analysis.",
-    links: [],
-    techStack: ["PyTorch", "Nextflow", "Python"],
   },
   {
     id: "f4d6a2c",
