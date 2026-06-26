@@ -17,9 +17,9 @@ interface TimelineCommitProps {
 }
 
 function highlightAuthor(authors: string): React.ReactNode {
-  const parts = authors.split(/(Dongze He)/g);
+  const parts = authors.split(/(Dongze He[†*]?)/g);
   return parts.map((part, i) =>
-    part === "Dongze He" ? (
+    part.startsWith("Dongze He") ? (
       <strong key={i} className="text-zinc-200">
         {part}
       </strong>
@@ -84,9 +84,16 @@ export function TimelineCommit({ entry }: TimelineCommitProps) {
 
         {/* Authors */}
         {entry.authors && (
-          <p className="text-zinc-500 text-sm mt-1">
-            {highlightAuthor(entry.authors)}
-          </p>
+          <>
+            <p className="text-zinc-500 text-sm mt-1">
+              {highlightAuthor(entry.authors)}
+            </p>
+            {entry.authorNote && (
+              <p className="text-zinc-600 text-xs mt-0.5">
+                {entry.authorNote}
+              </p>
+            )}
+          </>
         )}
 
         {/* Venue */}

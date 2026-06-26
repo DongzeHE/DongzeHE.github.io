@@ -20,6 +20,7 @@ export interface TimelineEntry {
   description: string;
   venue?: string;
   authors?: string;
+  authorNote?: string;
   highlights?: string[];
   links: TimelineLink[];
   techStack: string[];
@@ -99,7 +100,8 @@ export const timelineData: TimelineEntry[] = [
     description:
       "A Python-based command-line tool that generates comprehensive, interactive quality control reports for single-cell quantification results from alevin-fry and simpleaf.",
     venue: "Bioinformatics, Volume 42, Issue 5, May 2026, btag184",
-    authors: "Yuan Gao*, Dongze He*, and Rob Patro",
+    authors: "Yuan Gao†, Dongze He†, and Rob Patro*",
+    authorNote: "† Equal contribution; * Corresponding author",
     links: [
       {
         label: "OUP Bioinformatics",
@@ -165,6 +167,7 @@ export const timelineData: TimelineEntry[] = [
     venue: "ISMB 2024",
     authors:
       "Dongze He*, Yuan Gao, Spencer Skylar Chan, Natalia Quintana-Parrilla, and Rob Patro*",
+    authorNote: "* Corresponding author",
     links: [
       {
         label: "Paper",
@@ -218,6 +221,7 @@ export const timelineData: TimelineEntry[] = [
     venue: "Biostatistics 25(4), 1079-1093",
     authors:
       "Simone Tiberi, Joël Meili, Peiying Cai, Charlotte Soneson, Dongze He, Hirak Sarkar, Alejandra Avalos-Pacheco, Rob Patro, and Mark D Robinson*",
+    authorNote: "* Corresponding author",
     links: [
       {
         label: "Paper",
@@ -306,6 +310,7 @@ export const timelineData: TimelineEntry[] = [
       "A simplified interface for the alevin-fry ecosystem that can process complex single-cell data types with one command, including CITE-seq and 10X feature barcoding.",
     venue: "Bioinformatics 39",
     authors: "Dongze He*, and Rob Patro*",
+    authorNote: "* Corresponding author",
     links: [
       {
         label: "Paper",
@@ -332,6 +337,7 @@ export const timelineData: TimelineEntry[] = [
     venue: "Nature Methods 19, 316–322",
     authors:
       "Dongze He, Mohsen Zakeri, Hirak Sarkar, Charlotte Soneson, Avi Srivastava, and Rob Patro*",
+    authorNote: "* Corresponding author",
     links: [
       {
         label: "Paper",
