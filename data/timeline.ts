@@ -29,6 +29,31 @@ export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
   {
+    id: "k8f2c5e",
+    date: "Jun 2026",
+    sortDate: "2026-06-24",
+    type: TimelineType.Publication,
+    title:
+      "Distinct Cell-Type-Specific Mechanisms Underlie Cognitive Dysfunction During Persistent Integrated Stress Response Activation",
+    description:
+      "PNAS article in press from single-cell multi-omics work on persistent integrated stress response activation and cognitive dysfunction. Public bioRxiv preprint available.",
+    venue: "PNAS, in press",
+    authors: "Kristof A. Torkenczy et al. (including Dongze He)",
+    links: [
+      {
+        label: "bioRxiv preprint",
+        url: "https://www.biorxiv.org/content/10.1101/2025.02.28.640905v1.abstract",
+        icon: "paper",
+      },
+      {
+        label: "Preprint DOI",
+        url: "https://doi.org/10.1101/2025.02.28.640905",
+        icon: "external",
+      },
+    ],
+    techStack: ["Single-cell Multi-omics", "ISR", "Neuroscience", "PNAS"],
+  },
+  {
     id: "a1c8e2f",
     date: "Jun 2026",
     sortDate: "2026-06-11",

@@ -34,7 +34,7 @@ const socials = [
     icon: Mail,
   },
   {
-    href: "https://scholar.google.com/citations?user=PLACEHOLDER",
+    href: "https://scholar.google.com/citations?user=JoC_vicAAAAJ&hl=en",
     label: "Google Scholar",
     icon: GraduationCap,
   },
