@@ -21,6 +21,11 @@ const filters: { key: FilterOption; label: string; dotClass?: string }[] = [
     dotClass: "bg-purple-500",
   },
   {
+    key: TimelineType.Talk,
+    label: "Talks",
+    dotClass: "bg-amber-500",
+  },
+  {
     key: TimelineType.Education,
     label: "Milestones",
     dotClass: "bg-green-500",

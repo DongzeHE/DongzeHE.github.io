@@ -5,9 +5,11 @@
   --color-foreground: #fafafa;
   --color-node-publication: #3b82f6;
   --color-node-research: #a855f7;
+  --color-node-talk: #f59e0b;
   --color-node-education: #22c55e;
   --color-glow-publication: rgba(59, 130, 246, 0.5);
   --color-glow-research: rgba(168, 85, 247, 0.5);
+  --color-glow-talk: rgba(245, 158, 11, 0.5);
   --color-glow-education: rgba(34, 197, 94, 0.5);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

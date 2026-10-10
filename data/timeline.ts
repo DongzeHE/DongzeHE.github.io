@@ -1,6 +1,7 @@
 export enum TimelineType {
   Publication = "publication",
   Research = "research",
+  Talk = "talk",
   Education = "education",
   Milestone = "milestone",
 }
@@ -30,26 +31,44 @@ export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
   {
+    id: "n6e3a8c",
+    date: "Oct 2026",
+    sortDate: "2026-10-14",
+    type: TimelineType.Talk,
+    title: "Automation and agentification in bioinformatics pipelines",
+    description:
+      "Talk scheduled for October 14 at Nextflow Summit 2026 Virtual, in the AI for Bioinformatics track, on automation and agentification in bioinformatics pipelines.",
+    venue: "Nextflow Summit 2026 — Virtual",
+    links: [
+      {
+        label: "Session details",
+        url: "https://summit.nextflow.io/2026/virtual/agenda/automation-and-agentification-in-bioinformatics-pipelines/",
+        icon: "external",
+      },
+    ],
+    techStack: ["Nextflow", "Automation", "AI", "Bioinformatics"],
+  },
+  {
     id: "k8f2c5e",
-    date: "Jun 2026",
-    sortDate: "2026-06-24",
+    date: "Jul 2026",
+    sortDate: "2026-07-14",
     type: TimelineType.Publication,
     title:
-      "Distinct Cell-Type-Specific Mechanisms Underlie Cognitive Dysfunction During Persistent Integrated Stress Response Activation",
+      "Distinct cell type–specific mechanisms underlie cognitive dysfunction during persistent integrated stress response activation",
     description:
-      "PNAS article in press from single-cell multi-omics work on persistent integrated stress response activation and cognitive dysfunction. Public bioRxiv preprint available.",
-    venue: "PNAS, in press",
-    authors: "Kristof A. Torkenczy et al. (including Dongze He)",
+      "PNAS publication from single-cell multi-omics work on persistent integrated stress response activation and cognitive dysfunction.",
+    venue: "PNAS 123(29), e2537017123 (2026)",
+    authors: "Kristof Torkenczy et al. (including Dongze He)",
     links: [
+      {
+        label: "PNAS",
+        url: "https://doi.org/10.1073/pnas.2537017123",
+        icon: "paper",
+      },
       {
         label: "bioRxiv preprint",
         url: "https://www.biorxiv.org/content/10.1101/2025.02.28.640905v1.abstract",
         icon: "paper",
-      },
-      {
-        label: "Preprint DOI",
-        url: "https://doi.org/10.1101/2025.02.28.640905",
-        icon: "external",
       },
     ],
     techStack: ["Single-cell Multi-omics", "ISR", "Neuroscience", "PNAS"],
@@ -382,6 +401,8 @@ export function getNodeColor(type: TimelineType): string {
       return "var(--color-node-publication)";
     case TimelineType.Research:
       return "var(--color-node-research)";
+    case TimelineType.Talk:
+      return "var(--color-node-talk)";
     case TimelineType.Education:
     case TimelineType.Milestone:
       return "var(--color-node-education)";
@@ -405,6 +426,14 @@ export function getTypeClasses(type: TimelineType) {
         border: "border-purple-500/30",
         glow: "var(--color-glow-research)",
         dot: "bg-purple-500",
+      };
+    case TimelineType.Talk:
+      return {
+        bg: "bg-amber-500/10",
+        text: "text-amber-400",
+        border: "border-amber-500/30",
+        glow: "var(--color-glow-talk)",
+        dot: "bg-amber-500",
       };
     case TimelineType.Education:
     case TimelineType.Milestone:
