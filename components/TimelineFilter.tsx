@@ -11,6 +11,11 @@ interface TimelineFilterProps {
 const filters: { key: FilterOption; label: string; dotClass?: string }[] = [
   { key: "all", label: "All" },
   {
+    key: TimelineType.Education,
+    label: "Milestones",
+    dotClass: "bg-green-500",
+  },
+  {
     key: TimelineType.Publication,
     label: "Publications",
     dotClass: "bg-blue-500",
@@ -19,16 +24,6 @@ const filters: { key: FilterOption; label: string; dotClass?: string }[] = [
     key: TimelineType.Research,
     label: "Research",
     dotClass: "bg-purple-500",
-  },
-  {
-    key: TimelineType.Talk,
-    label: "Talks",
-    dotClass: "bg-amber-500",
-  },
-  {
-    key: TimelineType.Education,
-    label: "Milestones",
-    dotClass: "bg-green-500",
   },
 ];
 

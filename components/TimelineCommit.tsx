@@ -64,16 +64,13 @@ export function TimelineCommit({ entry }: TimelineCommitProps) {
       <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-5 hover:border-zinc-700 transition-colors duration-200">
         {/* Header row */}
         <div className="flex items-center gap-3 mb-3 flex-wrap">
-          <span className="font-mono text-xs text-zinc-600">
-            {entry.id}
-          </span>
-          <span className="font-mono text-xs text-zinc-500">
-            {entry.date}
-          </span>
           <span
             className={`text-xs px-2 py-0.5 rounded-full ${classes.bg} ${classes.text} ${classes.border} border`}
           >
             {entry.type}
+          </span>
+          <span className="font-mono text-xs font-bold text-zinc-100">
+            {entry.date}
           </span>
         </div>
 

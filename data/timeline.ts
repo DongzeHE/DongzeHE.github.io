@@ -1,7 +1,6 @@
 export enum TimelineType {
   Publication = "publication",
   Research = "research",
-  Talk = "talk",
   Education = "education",
   Milestone = "milestone",
 }
@@ -34,11 +33,11 @@ export const timelineData: TimelineEntry[] = [
     id: "n6e3a8c",
     date: "Oct 2026",
     sortDate: "2026-10-14",
-    type: TimelineType.Talk,
+    type: TimelineType.Research,
     title: "Automation and agentification in bioinformatics pipelines",
     description:
       "Talk scheduled for October 14 at Nextflow Summit 2026 Virtual, in the AI for Bioinformatics track, on automation and agentification in bioinformatics pipelines.",
-    venue: "Nextflow Summit 2026 — Virtual",
+    venue: "Nextflow Summit 2026",
     links: [
       {
         label: "Session details",
@@ -63,11 +62,6 @@ export const timelineData: TimelineEntry[] = [
       {
         label: "PNAS",
         url: "https://doi.org/10.1073/pnas.2537017123",
-        icon: "paper",
-      },
-      {
-        label: "bioRxiv preprint",
-        url: "https://www.biorxiv.org/content/10.1101/2025.02.28.640905v1.abstract",
         icon: "paper",
       },
     ],
@@ -401,8 +395,6 @@ export function getNodeColor(type: TimelineType): string {
       return "var(--color-node-publication)";
     case TimelineType.Research:
       return "var(--color-node-research)";
-    case TimelineType.Talk:
-      return "var(--color-node-talk)";
     case TimelineType.Education:
     case TimelineType.Milestone:
       return "var(--color-node-education)";
@@ -426,14 +418,6 @@ export function getTypeClasses(type: TimelineType) {
         border: "border-purple-500/30",
         glow: "var(--color-glow-research)",
         dot: "bg-purple-500",
-      };
-    case TimelineType.Talk:
-      return {
-        bg: "bg-amber-500/10",
-        text: "text-amber-400",
-        border: "border-amber-500/30",
-        glow: "var(--color-glow-talk)",
-        dot: "bg-amber-500",
       };
     case TimelineType.Education:
     case TimelineType.Milestone:

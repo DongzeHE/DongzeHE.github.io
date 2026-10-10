@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, GraduationCap, ExternalLink } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 function GitHubIcon({ size = 18 }: { size?: number }) {
   return (
@@ -29,19 +29,9 @@ const socials = [
     icon: LinkedInIcon,
   },
   {
-    href: "mailto:dongzehe.zaza@gmail.com",
-    label: "Email",
-    icon: Mail,
-  },
-  {
     href: "https://scholar.google.com/citations?user=JoC_vicAAAAJ&hl=en",
     label: "Google Scholar",
     icon: GraduationCap,
-  },
-  {
-    href: "https://orcid.org/0000-0001-8259-7434",
-    label: "ORCID",
-    icon: ExternalLink,
   },
 ];
 
