@@ -30,6 +30,23 @@ export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
   {
+    id: "scrm-2026",
+    date: "Oct 2026",
+    sortDate: "2026-10-29",
+    type: TimelineType.Publication,
+    title: "scRM — the single-cell read model",
+    description:
+      "A single-cell model that learns cell embeddings directly from raw sequencing bytes, without a reference genome, gene annotation, or count matrix. Code available on GitHub; preprint forthcoming.",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/altoslabs/scRM",
+        icon: "github",
+      },
+    ],
+    techStack: ["Single-cell AI", "Deep Learning", "Rust", "Python"],
+  },
+  {
     id: "n6e3a8c",
     date: "Oct 2026",
     sortDate: "2026-10-14",
