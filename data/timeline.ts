@@ -51,13 +51,20 @@ export const timelineData: TimelineEntry[] = [
   },
   {
     id: "scrm-2026",
-    date: "Oct 2026",
-    sortDate: "2026-10-29",
+    date: "Nov 2026",
+    sortDate: "2026-11-02",
     type: TimelineType.Publication,
-    title: "scRM — the single-cell read model",
+    title: "scRM: A single-cell foundation model trained on scRNA-seq reads",
     description:
-      "A single-cell model that learns cell embeddings directly from raw sequencing bytes, without a reference genome, gene annotation, or count matrix. Code available on GitHub; preprint forthcoming.",
+      "A single-cell foundation model that learns cell embeddings directly from raw sequencing reads, without a reference genome, gene annotation, or count matrix.",
+    venue: "bioRxiv preprint",
+    authors: "Dongze He et al.",
     links: [
+      {
+        label: "bioRxiv preprint",
+        url: "https://www.biorxiv.org/content/10.64898/2026.10.24.761590v1",
+        icon: "paper",
+      },
       {
         label: "GitHub",
         url: "https://github.com/altoslabs/scRM",
