@@ -30,6 +30,26 @@ export type FilterOption = "all" | TimelineType;
 
 export const timelineData: TimelineEntry[] = [
   {
+    id: "simpleaf-probes-2026",
+    date: "Nov 2026",
+    sortDate: "2026-11-06",
+    type: TimelineType.Publication,
+    title:
+      "Rapid, accurate, and memory-frugal sub-gene-level quantification of probe-based, multiplexed single-cell data",
+    description:
+      "Extended simpleaf for efficient demultiplexing and quantification of probe-based single-cell libraries, retaining probe-level information to reveal expression changes and splicing dynamics obscured by gene-level aggregation.",
+    venue: "bioRxiv preprint",
+    authors: "Dongze He, Yuan Gao, and Rob Patro",
+    links: [
+      {
+        label: "bioRxiv preprint",
+        url: "https://www.biorxiv.org/content/10.64898/2026.11.05.764594v1",
+        icon: "paper",
+      },
+    ],
+    techStack: ["Single-cell Analysis", "simpleaf", "Probe-level Quantification"],
+  },
+  {
     id: "scrm-2026",
     date: "Oct 2026",
     sortDate: "2026-10-29",
